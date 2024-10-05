@@ -79,4 +79,10 @@
   #resulttext{
     display: none;
   }
+  .txt~img{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+  
+  }
 }
