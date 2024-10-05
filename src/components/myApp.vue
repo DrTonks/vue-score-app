@@ -41,10 +41,10 @@
       <div  v-else-if="average1 == average2 && average3 < average2 "><span class="txt">你是：<br>无敌赤石大王<br>甘拜下风</span>
         <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1712(20241005-174549).JPG" alt="">
       </div>
-      <div  v-else-if="average1 == average2 && average3 > average2 "><span class="txt">你是：<br>正常人</span>
+      <div  v-else-if="average1 == average2 && average3 > average2 "><span class="txt">没准你是：<br>正常人</span>
         <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1720.PNG" alt="">
       </div>
-      <div  v-else-if="Math.abs(average3 - average2) < 1.7"><span class="txt">你：<br>略微抽象</span>
+      <div  v-else-if="1.5 < Math.abs(average3 - average2) < 1.7"><span class="txt">你：<br>略微抽象</span>
         <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1721.PNG" alt="">
       </div>
       <div  v-else-if="average1> average2 && average1 > average3"><span class="txt">你是：<br>科比·布莱恩特 </span> 
