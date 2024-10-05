@@ -47,16 +47,15 @@
       <div  v-else-if="average1> average2 && average1 > average3"><span class="txt">你是：<br>科比·布莱恩特 </span> 
         <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/dafentu%20(3).JPG" class="kobe">
       </div>
-      <div  v-else-if="1.6 < Math.abs(average3 - average2) < 1.69"><span class="txt">你：<br>略微抽象</span>
-        <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1721.PNG" alt="">
-      </div>
       <div  v-else-if="average2 > average1 && average2 > average3"><span class="txt">你露出鸡脚了 </span>
         <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/dafentu%20(1).JPG" class="j">
       </div>
       <div  v-else-if="average3 > average1 && average3 > average2"><span class="txt">你也许是：<br>葱粉</span>
         <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/dafenrt.png" class="fu">
       </div>
-
+      <div  v-else-if="1.6 < Math.abs(average3 - average2) < 1.69 || 1.6 < Math.abs(average3 - average1) < 1.69"><span class="txt">你：<br>略微抽象</span>
+        <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1721.PNG" alt="">
+      </div>
 
  
       <div  v-else><span class="txt">无法判断成分，你有点奇怪喵</span></div>
