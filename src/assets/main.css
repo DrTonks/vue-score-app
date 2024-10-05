@@ -1,0 +1,54 @@
+#body{
+  position: relative;
+  left: 10%;
+}
+#resulttext{
+  position: absolute;
+  right: 50%;
+  top: 10%;
+  transition: 1s;
+  font-weight: bold;
+  font-size: 40px;
+
+}
+#resultbut{
+  position: absolute;
+  right: 53%;
+  top: 18%;
+  transition: 1s;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.chengfen {
+  position: relative;
+}
+.txt {
+  position:absolute;
+  font-size: 100px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  top: 450px;
+  color: blueviolet;
+  font-weight: bolder;
+}
+.txt~img{
+  width: 0px;
+  position: relative;
+
+}
+.txt:hover~img {
+  transform: rotate(360deg);
+  transition: 1.2s;
+  height: 100vh;
+  width: 170vh;
+  object-fit: cover;
+}
+.txt~img:hover{
+  transform: rotate(360deg);
+  transition: 1.2s;
+  height: 100vh;
+  width: 170vh;
+  object-fit: cover;
+}
