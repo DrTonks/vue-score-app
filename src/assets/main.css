@@ -85,4 +85,14 @@
     position: relative;
   
   }
+  .txt {
+    position:absolute;
+    font-size: 50px;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    top: 450px;
+    color: blueviolet;
+    font-weight: bolder;
+  }
 }
