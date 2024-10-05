@@ -16,7 +16,7 @@
       </div>
   
       <div v-else>
-        <h2>分析结果！</h2>
+        <h2>全部完成！分析结果--></h2>
       </div>
   
       <div>
@@ -44,11 +44,11 @@
       <div  v-else-if="average1 == average2 && average3 > average2 "><span class="txt">没准你是：<br>正常人</span>
         <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1720.PNG" alt="">
       </div>
-      <div  v-else-if="1.5 < Math.abs(average3 - average2) < 1.7"><span class="txt">你：<br>略微抽象</span>
-        <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1721.PNG" alt="">
-      </div>
       <div  v-else-if="average1> average2 && average1 > average3"><span class="txt">你是：<br>科比·布莱恩特 </span> 
         <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/dafentu%20(3).JPG" class="kobe">
+      </div>
+      <div  v-else-if="1.6 < Math.abs(average3 - average2) < 1.69"><span class="txt">你：<br>略微抽象</span>
+        <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1721.PNG" alt="">
       </div>
       <div  v-else-if="average2 > average1 && average2 > average3"><span class="txt">你露出鸡脚了 </span>
         <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/dafentu%20(1).JPG" class="j">
@@ -60,11 +60,8 @@
 
  
       <div  v-else><span class="txt">无法判断成分，你有点奇怪喵</span></div>
-
     </div>
-
-  
-
+    <div class="end">被你发现了！<a href="https://drtonks.github.io/myblog.github.io/" target="_blank">那就收藏一下我的博客再走吧！</a></div>
   </template>
   
   <script>
