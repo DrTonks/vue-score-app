@@ -189,7 +189,8 @@
 
           <div v-if="all >= 75" class="card unselectable" style="--i:3; background:linear-gradient(270deg,orange,yellow,orange ) ;background-size: 200%; animation: flow 5s linear infinite;" > 
             <h2 style="font-size: 2rem; width: 100%;position: relative;text-align: center;" class="cardTitle">
-              你对所有图片的评价均分是
+              你对所有图片的印象分是
+
               <h1>{{ all.toFixed(1) }}</h1>
             </h2>
 
@@ -200,7 +201,8 @@
           </div>
           <div v-else-if="all >= 50 && all <75" class="card unselectable" style="--i:3; background:linear-gradient(270deg,#c1ebff,#55daf8,#c1ebff ) ;background-size: 200%; animation: flow 5s linear infinite;" > 
             <h2 style="font-size: 2rem; width: 100%;position: relative;text-align: center;" class="cardTitle">
-              你对所有图片的评价均分是
+              你对所有图片的印象分是
+
               <h1>{{ all.toFixed(1) }}</h1>
             </h2>
 
@@ -210,11 +212,11 @@
           </div>
           <div v-else-if="all <50" class="card unselectable" style="--i:3; background:linear-gradient(270deg,#ff0000,#fff,#ff0000 ) ;background-size: 200%; animation: flow 5s linear infinite;" > 
             <h2 style="font-size: 2rem; width: 100%;position: relative;text-align: center;" class="cardTitle">
-              你对所有图片的评价均分是
+              你对所有图片的印象分是
               <h1>{{ all.toFixed(1) }}</h1>
             </h2>
             <h3  style="position: absolute;top: 70%;margin: 2px;padding: 2px;text-align: center;">
-              你有点苛刻了<br>一张喜欢的都没有吗qwq</h3>
+              你有点苛刻了<br>一定要有善于发现美的眼睛<br>qwq</h3>
 
           </div>
 
