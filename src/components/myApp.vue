@@ -2,7 +2,7 @@
 
       <div id="body" class="unselectable">
       <div  v-if="thisIndex < randomImages.length">
-        <h2 v-if="thisIndex===0">点击按钮来为图片打分！</h2>
+        <h2 v-if="thisIndex===0" >这是一个用来测试成分的打分小网站！<br>点击按钮来为图片打分--></h2>
         <h2 v-else-if="thisIndex > 0">你对下列图片的评分是？</h2>
         <img :src="randomImages[thisIndex].url" width="100%" height="900px" style="object-fit: contain;">
         <div>
@@ -31,11 +31,12 @@
     </div>
     <div id="result" v-if="thisIndex == randomImages.length">
       
-      <button id="resultbut" class="unselectable" @click="afterclick = !afterclick">点我查看分析结果</button>
+      <button id="resultbut" class="unselectable" @click="afterclick = !afterclick">点我查看分析结果<br>(鼠标选中下方卡片)</button>
     </div>
     
     <!-- 清空页面后的展示区！ -->
     <div v-if="afterclick" class="chengfen" >
+    
       <!-- <div  v-if="average1 == average2 && average3 == average2"><span class="txt">你是：<br>一只狂按按钮的猫 </span>
         <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/dafentu.JPG" class="mao">
       </div>

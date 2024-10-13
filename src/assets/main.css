@@ -30,12 +30,12 @@ body{
   border: 0;
   box-shadow: 0 0px 20px #808080;
   width: 20%;
-  height: 40px;
-  border-radius: 5px;
+  height: 60px;
+  border-radius: 15px;
   cursor: pointer;
   background: linear-gradient(to right,#c1ebff,#55daf8,#0c04ff);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 .but{
   width:8%;
@@ -218,7 +218,10 @@ body{
   opacity: 0;
 }
 
-
+#aft{
+  width: 100%;
+  text-align: center;
+}
 @media screen and (max-width : 768px) {
   .ifh2{
     position: absolute; width: 100%; text-align: center;top: 10%;
