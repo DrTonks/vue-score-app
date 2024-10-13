@@ -6,13 +6,24 @@
   
   <script>
   import ScoreApp from './components/myApp.vue';
-  import _ from 'lodash';
+  import _, { first } from 'lodash';
   export default {
     components: {
       ScoreApp,
     },
   };
+ 
+
+  
+
+
+
+
+
+
+
   </script>
+
   
 
 <style>
