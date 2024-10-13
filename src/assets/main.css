@@ -37,6 +37,17 @@ body{
   font-size: 20px;
   font-weight: bolder;
 }
+#resultbut2{
+  border: 0;
+  box-shadow: 0 0px 20px #808080;
+  width: 20%;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: linear-gradient(to right,#0c04ff,#55daf8,#c1ebff);
+  font-size: 20px;
+  font-weight: bolder;
+}
 .but{
   width:8%;
   left:0 ;

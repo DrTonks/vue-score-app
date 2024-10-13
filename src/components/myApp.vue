@@ -4,7 +4,7 @@
       <div  v-if="thisIndex < randomImages.length">
         <h2 v-if="thisIndex===0" >这是一个用来测试成分的打分小网站！<br>点击按钮来为图片打分--></h2>
         <h2 v-else-if="thisIndex > 0">你对下列图片的评分是？</h2>
-        <img :src="randomImages[thisIndex].url" width="100%" height="900px" style="object-fit: contain;">
+        <img :src="randomImages[thisIndex].url" width="90%" height="800px" style="object-fit: contain;">
         <div>
           <button
             v-for="score in scores"
@@ -31,7 +31,7 @@
     </div>
     <div id="result" v-if="thisIndex == randomImages.length">
       
-      <button id="resultbut" class="unselectable" @click="afterclick = !afterclick">点我查看分析结果<br>(鼠标选中下方卡片)</button>
+      <button id="resultbut" class="unselectable" @click="afterclick = !afterclick"><span v-if="!afterclick">点我查看分析结果</span><br><span v-if="afterclick" style="font-size: 15px;opacity: .6;">(鼠标选中下方卡片)</span></button>
     </div>
     
     <!-- 清空页面后的展示区！ -->
@@ -226,7 +226,10 @@
 
 
 
+      <div id="result">
 
+      <button id="resultbut2" class="unselectable" @click="refresh()" style="color: yellow;">点我重新开始测试！</button>
+      </div>
 
 
 
@@ -316,7 +319,9 @@ import { after } from 'lodash';
       // document.body.style.backgroundColor = this.isBackgroundBlack ? 'black' : 'white'; // 设置背景颜色
       // console.log('isBackgroundBlack:', this.isBackgroundBlack); 
       // },
-
+      refresh(){
+        window.location.reload();
+      },
       getRandomImages(){
         const shuffledImages = _.shuffle(this.images); // 打乱
       this.randomImages = shuffledImages.slice(0, 30); // 选择随机图片
