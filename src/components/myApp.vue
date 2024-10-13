@@ -266,7 +266,7 @@ import { after } from 'lodash';
           { url: 'https://vue-1329849192.cos.ap-chengdu.myqcloud.com/yule%20(2).JPG',tag:['yule']},
           { url: 'https://vue-1329849192.cos.ap-chengdu.myqcloud.com/yule%20(3).JPG',tag:['yule']},
           { url: 'https://vue-1329849192.cos.ap-chengdu.myqcloud.com/yule%20(4).JPG',tag:['yule']},
-          { url: 'https://vue-1329849192.cos.ap-chengdu.myqcloud.com/yule%20(4).JPG',tag:['yule']},
+          { url: 'https://vue-1329849192.cos.ap-chengdu.myqcloud.com/yule%20(5).JPG',tag:['yule']},
 
           { url:'https://vue-1329849192.cos.ap-chengdu.myqcloud.com/maomao%20(1).JPG',tag:['mao']},
           { url:'https://vue-1329849192.cos.ap-chengdu.myqcloud.com/maomao%20(2).JPG',tag:['mao']},
