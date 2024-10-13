@@ -230,7 +230,7 @@
 
       <div id="result">
 
-      <button id="resultbut2" class="unselectable" @click="refresh()" style="color: yellow;">点我重新开始测试！</button>
+      <button id="resultbut2" class="unselectable" @click="refresh()" style="color: yellow;">换一组图片?<br>点我重新开始测试！</button>
       </div>
 
 
